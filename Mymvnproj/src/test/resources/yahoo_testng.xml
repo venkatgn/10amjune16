@@ -1,0 +1,19 @@
+<suite name="google">
+  <test name="test_ff_sanity">
+  <parameter name="browser" value="ff" />
+     <classes>
+        <class name="yahoo.Sanity_Test" />       
+     </classes>
+  </test>
+  <test name="test_chrome_sanity">
+  <parameter name="browser" value="chrome" />
+     <classes>
+        <class name="yahoo.Sanity_Test" />
+     </classes>
+  </test>  
+  <listeners>
+  <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+  </listeners>
+</suite>
